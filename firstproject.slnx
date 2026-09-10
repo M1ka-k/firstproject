@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="firstproject.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
+</Solution>

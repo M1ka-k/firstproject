@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="firstproject.Views.SliderCandelsPage"
+             Title="SliderCandelsPage">
+    <VerticalStackLayout>
+        
+
+        <Slider 
+            x:Name="sliderAge"
+            WidthRequest="400"
+            Maximum="120" 
+            Minimum="0"
+            ValueChanged="ShowAge"
+            ></Slider>
+        <Label 
+            x:Name="TextAge"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"/>
+
+        <FlexLayout x:Name="CandleHolder" Wrap="Wrap">
+        </FlexLayout>
+
+    </VerticalStackLayout>
+</ContentPage>

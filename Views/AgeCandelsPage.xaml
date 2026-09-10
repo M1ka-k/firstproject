@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="firstproject.Views.AgeCandelsPage"
+             Title="AgeCandelsPage">
+    <Grid
+        x:Name="gridMain"
+        RowDefinitions="*,*">
+
+        
+        <VerticalStackLayout Grid.Row="0" VerticalOptions="Start">
+            <Label
+            x:Name="msg"
+            Text="waiting...."
+            TextColor="Red" />
+            <FlexLayout x:Name="CandleHolder" Wrap="Wrap">
+                </FlexLayout>
+
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="1" VerticalOptions="End">
+            <Entry x:Name="entryName"
+            Placeholder="Enter name"
+        />
+
+            <Entry x:Name="entryAge" Keyboard="Numeric"
+        Placeholder="Enter Age"
+        />
+
+            <Button Clicked="CalcTenAge_Clicked"
+        Text="Calculate"
+        />
+
+        </VerticalStackLayout>
+
+
+
+    </Grid>
+</ContentPage>

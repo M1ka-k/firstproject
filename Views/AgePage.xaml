@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="firstproject.Views.AgePage"
+             Title="AgePage">
+        <Grid
+            x:Name="gridMain"
+            RowDefinitions="*,*">
+
+        <Label
+            
+            x:Name="msg"
+            Grid.Row="0"
+            Text="waiting...."
+            TextColor="Red" />
+
+        <VerticalStackLayout Grid.Row="1" VerticalOptions="End">
+            <Entry x:Name="entryName"
+                Placeholder="Enter name"
+            />
+
+            <Entry x:Name="entryAge" Keyboard="Numeric"
+            Placeholder="Enter Age"
+            />
+
+            <Button Clicked="CalcTenAge_Clicked"
+            Text="Calculate"
+            />
+
+        </VerticalStackLayout>
+
+
+
+    </Grid>
+</ContentPage>
